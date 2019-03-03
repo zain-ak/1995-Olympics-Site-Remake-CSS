@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+<!--        <link rel="stylesheet" media="screen" href="style.css?v=8may2013">-->
+		<meta charset="utf-8">
+		<title>The Olympic Movement</title>
+        <link rel="shortcut icon" href="olympic_rings.ico"/>
+        
+        <style>
+            body {
+                background-color: black;
+            }
+            
+            #logoAndTitle { 
+                column-width: 400px;
+                min-height: 500px;
+                background-color: white;
+                padding: 30px;
+                font-family: helvetica;
+                font-size: 30px;
+            }
+            
+            @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+            @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+            @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+            
+            #logoImage:hover {
+                -webkit-animation:spin 2s linear ;
+                -moz-animation:spin 2s linear ;
+                animation:spin 2s linear ;
+            }
+            
+            #infoBox {
+                opacity: 0.65;
+                float: left;
+                min-height: 250px;
+                color: white;
+                background-color: #0985C2;
+                font-size: 25px;
+                font-family: helvetica;
+                padding: 25px;
+            }
+            
+            #infoBox:hover {
+                animation: boxTransition .15s forwards;
+                -webkit-animation: boxTransition 0.15s forwards;
+            }
+            
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes boxTransition {
+/*
+                25% {background-color: #0985C2; opacity: 0.7375;}
+                50% {background-color: #1F8C3F; opacity: 0.825;}
+                75% {background-color: #EE3551; opacity: 0.9125;}
+                100% {background-color: #FBB133; opacity: 1.0;}
+*/
+                25% {opacity: 0.7375;}
+                50% {opacity: 0.825;}
+                75% {opacity: 0.9125;}
+                100% {opacity: 1.0;}
+            }
+
+            /* Standard syntax */
+            @keyframes boxTransition {
+/*
+                25% {background-color: #0985C2; opacity: 0.7375;}
+                50% {background-color: #1F8C3F; opacity: 0.825;}
+                75% {background-color: #EE3551; opacity: 0.9125;}
+                100% {background-color: #FBB133; opacity: 1.0;}
+*/
+                25% {opacity: 0.7375;}
+                50% {opacity: 0.825;}
+                75% {opacity: 0.9125;}
+                100% {opacity: 1.0;}
+            }
+            
+            #sidebar {
+                opacity: 0.65;
+                padding: 0px 23px;
+                margin: 1px 0px;
+                min-height: 300px;
+                float: left;
+                background-color: #1F8C3F;
+                font-size: 15px;
+                font-family: helvetica;
+                color: white;
+            }
+            
+            #sidebar:hover {
+                animation: boxTransition .15s forwards;
+                -webkit-animation: boxTransition 0.15s forwards;
+            }
+            
+            #sidebar a:hover {
+                animation: linkTransition .15s forwards;
+                -webkit-animation: linkTransition 0.15s forwards;
+                text-decoration: none;
+            }
+            
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes linkTransition {
+/*
+                25% {background-color: #0985C2; opacity: 0.7375;}
+                50% {background-color: #1F8C3F; opacity: 0.825;}
+                75% {background-color: #EE3551; opacity: 0.9125;}
+                100% {background-color: #FBB133; opacity: 1.0;}
+*/
+                25% {color: #FFEE14; opacity: 0.7375;}
+                50% {color: #FFEE14; opacity: 0.825;}
+                75% {color: #FFEE14; opacity: 0.9125;}
+                100% {color: #FFEE14; opacity: 1.0;}
+            }
+
+            /* Standard syntax */
+            @keyframes linkTransition {
+/*
+                25% {background-color: #0985C2; opacity: 0.7375;}
+                50% {background-color: #1F8C3F; opacity: 0.825;}
+                75% {background-color: #EE3551; opacity: 0.9125;}
+                100% {background-color: #FBB133; opacity: 1.0;}
+*/
+                25% {color: #FFEE14; opacity: 0.7375;}
+                50% {color: #FFEE14; opacity: 0.825;}
+                75% {color: #FFEE14; opacity: 0.9125;}
+                100% {color: #FFEE14; opacity: 1.0;}
+            }
+            
+            .gamesButtons {
+                opacity: 0.65;
+                float: left;
+            }
+            
+            .gamesButtons:hover {
+                animation: boxTransition .15s forwards;
+                -webkit-animation: boxTransition .15s forwards;
+            }
+            
+            marquee {
+                font-family: helvetica;
+                font-style: oblique;
+                font-size: 15px;
+                animation-direction: normal;
+                color: white;
+                width: 100%;
+            }
+            
+            @-moz-keyframes scale { 100% { -moz-transform: scale(1.35); } }
+            @-webkit-keyframes scale { 100% { -webkit-transform: scale(1.35); } }
+            @keyframes scale { 100% { -webkit-transform: scale(1.35); transform:scale(1.35); } }
+            
+            marquee:hover {
+                 -webkit-animation:scale .15s linear forwards;
+                -moz-animation:scale .15s linear forwards;
+                animation:scale .15s linear forwards;
+            }
+            
+            h3 {
+                font-family: helvetica;
+                color: white;
+            }
+            
+            a { color: white; }
+            
+            
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <td id="logoAndTitle">
+                    <img id="logoImage" src="olympic_rings.png" height="150" width="350" vspace="0" hspace="0"/>
+                    <h2 style="color:black; text-align: center">The Olympic Movement</h2>
+                    <a href="summer_olympics/tokyo_2020/tokyo.html"><marquee class="marquee" style="background-color: #EE3551; opacity: 0.65">The 2020 Summer Olympics are next! We could use some money</marquee></a> <!-- RED M -->
+                    <a href="winter_olympics/beijing_2022/beijing.html">
+                    <marquee class="marquee" style="background-color: #1F8C3F; opacity: 0.65">The 2022 Winter Olympics are next! Make sure you buy tickets!</marquee></a> <!-- GREEN M -->
+                    <a href="winter_olympics/lillehammer_1994/lillehammer.html">
+                    <marquee class="marquee" style="background-color: #FBB133; opacity: 0.65">The 1994 Winter Olympics are next! What are you going to tell your kids?!</marquee></a> <!-- YELLOW M -->
+                    <a href="summer_olympics/barca_1992/barca.html">
+                    <marquee class="marquee" style="background-color: #0985C2; opacity: 0.65">The 1992 Summer Olympics are next! You just missed them!</marquee></a>     <!-- BLUE M -->
+                </td>
+                <td id="infoBox">
+                     <h3>The Olympics - Brief Introduction</h3> 
+                    <p style="font-size: 15px;">The modern Olympic Games or Olympics are leading international sporting events featuring summer and winter sports competitions in which thousands of athletes from around the world participate in a variety of competitions. The Olympic Games are considered the world's foremost sports competition with more than 200 nations participating. The Olympic Games are held every four years, with the Summer and Winter Games alternating by occurring every four years but two years apart.</p>
+                </td>
+                <td class="gamesButtons">
+                    <a href="summer_olympics/summer_olympics.html"><img src="summer_olympics_banner.png" width="300" height="300" vspace="" hspace=""/></a>
+                </td>
+                <td class="gamesButtons">
+                    <a href="winter_olympics/winter_olympics.html"><img src="winter_olympics_banner.png" width="300" height="300" vspace="" hspace=""/></a>
+                </td>
+                <td id="sidebar">
+<!--                    <hr align="left" color="grey" size="3" width="250">    //FROM HTML assignment for styling, not required for this assignment -->
+                    <h3 align="left">Useful Links</h3>
+                    <a href="history.html">History of the Olympics</a><br>
+                    <a href="">National Olympic Committees</a><br>
+                    <a href="members.html">Members</a><br>
+                    <a href="">Sports Arbitration</a><br>
+                    <a href="">Presidents</a>
+                </td>
+            </tr>
+        </table>
+        <br>
+    </body>
+    
+    <footer align="right">
+        <font size="2" style="color: white;">Created by: Zain Khalid &amp Bhupesh Sanwaria</font>
+        <br>
+        <font size="2" style="color: white;">Contact information: <a href="mailto:betterthanthereal1995site@olympics.ca">
+        better_than_the_real_1995_site@olympics.ca</a></font>
+        <br>
+    </footer>
+</html>

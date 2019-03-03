@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Barca 1992</title>
+        <link rel="shortcut icon" href="../../olympic_rings.ico"/>
+        <style>
+            body {
+                background-color: chocolate;
+            }
+            
+            #logoAndTitle { 
+                max-width: 200px;
+                max-height: 300px;
+                background-color: blanchedalmond;
+                padding: 30px;
+                font-family: helvetica;
+                font-size: 30px;
+            }
+            
+            @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+            @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+            @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+            
+            #logoImage:hover {
+                -webkit-animation:spin 2s linear ;
+                -moz-animation:spin 2s linear ;
+                animation:spin 2s linear ;
+            }
+            
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes boxTransition {
+                100% {background-color: blanchedalmond; opacity: 1.0; color: chocolate;}
+            }
+
+            /* Standard syntax */
+            @keyframes boxTransition {
+                100% {background-color: blanchedalmond; opacity: 1.0; color: chocolate;}
+            }
+        
+            .factTable {
+                font-family: helvetica;
+                float: left;
+                background-color: chocolate;
+            }
+            
+            .factTable table {
+                color: blanchedalmond;
+                border-color: white;
+                border-width: thick;
+                float: left;
+            }
+            
+            .factTable:hover table {
+                border-color: black;
+                border-width: thick;
+                animation: boxTransition .15s forwards;
+                -webkit-animation: boxTransition .15s forwards;
+            }
+            
+            @-moz-keyframes scale { 100% { -moz-transform: scale(1.35); } }
+            @-webkit-keyframes scale { 100% { -webkit-transform: scale(1.35); } }
+            @keyframes scale { 100% { -webkit-transform: scale(1.35); transform:scale(1.35); } }
+            
+            marquee:hover {
+                 -webkit-animation:scale .15s linear forwards;
+                -moz-animation:scale .15s linear forwards;
+                animation:scale .15s linear forwards;
+            }
+    
+        </style>
+        
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <td id="logoAndTitle">
+                    <img id="logoImage" src="barca_logo.png" height="195" width="180" hspace="15"/>
+                    <img id="logoImage" src="mascot.png" height="150" width="150" hspace="35" vspace="20"/>
+                </td>
+                <td class="factTable" colspan="3">
+                    <table>
+                        <tr align="left">
+                            <td width="70%">
+                                <table border="1 | 2 | 3 | 4">
+<tr>
+                            <td width="200">
+                                <h3><b>Date</b></h3>
+                                <p>25 July - 09 Aug</p>
+                            </td>
+                            <td width="200">
+                                <h3><b>Country</b></h3>
+                                <p>Spain</p>
+                            </td>
+                            <td width="200">
+                                <h3><b>Countdown</b></h3>
+                                <p>-9,697 Days</p>
+                            </td>
+                            <td width="200">
+                                <a href="https://www.olympic.org/barcelona-1992" target="_blank"><h3><b>Website</b></h3></a>
+                                <p>Probably a better resource</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="200">
+                                <h3><b>Athletes Expected</b></h3>
+                                <p>9,356</p>
+                            </td>
+                            <td width="200">
+                                <h3><b>Stadium</b></h3>
+                                <p>Estadi Olímpic Lluís Companys</p>
+                            </td>
+                            <td width="250">
+                                <h3><b>Facts</b></h3>
+                                <li>First boycott-free Olympics since sometime</li>
+                                <li>Soviet Union had dissolved, first time not represented</li>
+                                <li>I'm sure there's more...</li>
+                            </td>
+                        </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                </td>
+            </tr>
+        </table>  
+    </body>
+    
+    <footer align="right">
+        <font size="2" style="color:blanchedalmond;">Created by: Zain Khalid</font>
+        <br>
+        <font size="2" style="color:blanchedalmond;">Contact information: <a href="mailto:betterthanthereal1995site@olympics.ca">
+        better_than_the_real_1995_site@olympics.ca</a></font>
+        <br>
+    </footer>   
+</html>

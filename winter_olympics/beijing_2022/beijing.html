@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Beijing 2022</title>
+        <link rel="shortcut icon" href="../../olympic_rings.ico"/>
+        <style>
+            body {
+                background-color: white;
+            }
+            
+            p {
+                font-size: 15px;
+            }
+            
+            #logoAndTitle { 
+                max-width: 200px;
+                max-height: 200px;
+                background-color: #FFF;
+                padding: 30px;
+                float: left;
+            }
+            
+            @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+            @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+            @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+            
+            #logoImage:hover {
+                -webkit-animation:spin 2s linear ;
+                -moz-animation:spin 2s linear ;
+                animation:spin 2s linear ;
+            }
+            
+            #infoBox {
+                border-radius: 30pt;
+                margin-right: 30pt;
+                margin-bottom: 30pt;
+                opacity: 0.85;
+                float: left;
+                min-height: 250px;
+                color: white;
+                background-color: #30ADE4;
+                font-family: helvetica;
+                padding: 25px;
+            }
+            
+            #infoBox:hover {
+                float: left;
+                animation: boxTransition .15s forwards;
+                -webkit-animation: boxTransition 0.15s forwards;
+            }
+            
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes boxTransition {
+                100% {background-color: #30ADE4; opacity: 1.0; color: white;}
+            }
+
+            /* Standard syntax */
+            @keyframes boxTransition {
+                100% {background-color: #30ADE4; opacity: 1.0; color: white;}
+            }
+        
+            .factTable {
+                opacity: 0.85;
+                border-radius: 30pt;
+                font-family: helvetica;
+                float: right;
+                background-color: #30ADE4;
+            }
+            
+            .factTable table {
+                border-radius: 30pt;
+                color: white;
+                border-color: white;
+                border-width: thick;
+                float: right;
+            }
+            
+            .factTable:hover table {
+                border border-radius: 30pt;
+                border-color: #30ADE4;
+                border-width: thick;
+                animation: boxTransition .15s forwards;
+                -webkit-animation: boxTransition .15s forwards;
+            }
+            
+            @-moz-keyframes scale { 100% { -moz-transform: scale(1.35); } }
+            @-webkit-keyframes scale { 100% { -webkit-transform: scale(1.35); } }
+            @keyframes scale { 100% { -webkit-transform: scale(1.35); transform:scale(1.35); } }
+            
+            marquee:hover {
+                 -webkit-animation:scale .15s linear forwards;
+                -moz-animation:scale .15s linear forwards;
+                animation:scale .15s linear forwards;
+            }
+            
+            #infoBox h3 {
+                font-family: helvetica;
+                color: white;
+            }
+            
+            #infoBox:hover h3 {
+                font-family: helvetica;
+                color: white;
+            }
+            
+            a { color: white; }
+               
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <td id="logoAndTitle">
+                    <img id="logoImage" src="beijing_logo.png" height="195" width="150"/>
+                </td>
+                <td id="infoBox">
+                    <h3>The 2022 Beijing Olympics</h3> 
+                    <p>
+                        Having won the bid for the 2022 Olympic Winter Games on 31 July 2015, Beijing is set to become the first city in the world to have hosted both the summer and winter editions of the Olympic Games. 
+                        <br><br>
+                        With a vision of “Joyful Rendezvous upon Pure Ice and Snow,” Beijing 2022 will build on the legacies of the landmark Beijing 2008 Olympic Games and expects to encourage millions of people across China to embrace winter sports.
+                        <br><br>
+                        The 109 events in seven Olympic winter sports will be held in the three competition zones of central Beijing, Yanqing and Zhangjiakou.
+                        <br><br> 
+                    </p>
+                    
+                        <h4>Three Competition Zones</h4>
+                    <p>
+                        Beijing will host all the ice events (curling, ice hockey and skating) and four snow events (snowboard big air and freestyle skiing big air, men’s and women’s), making full use of the legacy venues of Beijing 2008 in the spirit of Olympic Agenda 2020.
+                        
+                        <br><br>
+                        Yanqing, a suburban district of Beijing (80km to the northwest) and home to the famous Badaling and Juyongguan stretches of the Great Wall, is to host the alpine skiing and sliding (bobsleigh, skeleton and luge) events.
+                        <br><br>
+                        Zhangjiakou, further to the northwest in the neighbouring Hebei province, will host all the other snow events (snowboard, freestyle skiing, cross country skiing, ski jumping, Nordic combined and biathlon) in its Chongli district, a popular skiing destination.
+                        <br><br>
+                        The Beijing-Zhangjiakou high-speed railway, to be completed by the end of 2019, will cut travel time from Beijing to Yanqing to 20 minutes, and from Beijing to Zhangjiakou to 50 minutes.
+                        <br><br>
+                        </p>
+                        <h4>Seven New Events</h4><p>
+                        The addition of seven new events -- women’s monobob, freestyle skiing big air (men’s and women’s), and mixed team events in short track speed skating team relay, ski jumping, freestyle skiing aerials and snowboard cross -- to Beijing 2022’s sports programme will bring about the most gender-balanced Olympic Winter Games to date, with more female athletes (45.44 percent) and women's events than at any previous Games.
+                        <br><br></p>
+                        <h4>Spring Festival (Chinese New Year)</h4><p>
+                        The Olympic Winter Games Beijing 2022 will take place in February 2022, coinciding with the Chinese New Year (Spring Festival), the most important holiday in China. Local residents are looking forward to welcoming athletes from around the globe to enjoy the Chinese New Year festivities, the majestic landscape and the rich cultures of Beijing, Yanqing, and Zhangjiakou, as they charm the world with the beauty of winter sports.
+                    </p>
+                </td>
+                </tr><tr>
+                <td class="factTable" colspan="3">
+                    <table>
+                         <tr style="border-radius: 30pt;">
+                            <td width="250">
+                                <h3><b>Date</b></h3>
+                                <p>4 Feb - 20 Feb</p>
+                            </td>
+                            <td width="250">
+                                <h3><b>Country</b></h3>
+                                <p>China</p>
+                            </td>
+                            <td width="250">
+                                <h3><b>Countdown</b></h3>
+                                <p>1,089 days</p>
+                            </td>
+                            <td width="250">
+                                <a href="https://www.beijing2022.cn/en/" target="_blank"><h3><b>Website</b></h3></a>
+                                <p>You have all the information you need right here, don't leave</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="250">
+                                <h3><b>Events</b></h3>
+                                <p>109 in 7 Sports</p>
+                            </td>
+                            <td width="250">
+                                <h3><b>Stadium</b></h3>
+                                <p>Beijing National Stadium</p>
+                            </td>
+                            <td width="500">
+                                <h3><b>Facts</b></h3>
+                                <li>First city to host summer and winter games</li>
+                                <li>Will coincide with Chinese New Year</li>
+                                <li>China will also expand the Beijing Subway</li>
+                            </td>
+                        </tr>
+                </table>
+                <br>
+                </td></tr>
+        </table>  
+    </body>
+    
+    <footer align="right">
+        <font size="2" style="color:white;">Created by: Zain Khalid</font>
+        <br>
+        <font size="2" style="color:white;">Contact information: <a href="mailto:betterthanthereal1995site@olympics.ca">
+        better_than_the_real_1995_site@olympics.ca</a></font>
+        <br>
+        <font size="2" style="color:white;"><a href="https://www.olympic.org/tokyo-2020">Reference</a></font>
+    </footer>   
+</html>

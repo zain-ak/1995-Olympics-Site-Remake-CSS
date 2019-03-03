@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Tokyo 2020</title>
+        <link rel="shortcut icon" href="../../olympic_rings.ico"/>
+        <style>
+            body {
+                background-color: black;
+            }
+            
+            #logoAndTitle { 
+                max-width: 200px;
+                max-height: 300px;
+                background-color: #FFF;
+                padding: 30px;
+                font-family: helvetica;
+                font-size: 30px;
+            }
+            
+            @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+            @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+            @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+            
+            #logoImage:hover {
+                -webkit-animation:spin 2s linear ;
+                -moz-animation:spin 2s linear ;
+                animation:spin 2s linear ;
+            }
+            
+            #infoBox {
+                opacity: 0.65;
+                float: left;
+                min-height: 250px;
+                color: white;
+                background-color: #000;
+                font-size: 25px;
+                font-family: helvetica;
+                padding: 25px;
+            }
+            
+            #infoBox:hover {
+                animation: boxTransition .15s forwards;
+                -webkit-animation: boxTransition 0.15s forwards;
+            }
+            
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes boxTransition {
+                100% {background-color: #FFF; opacity: 1.0; color: black;}
+            }
+
+            /* Standard syntax */
+            @keyframes boxTransition {
+                100% {background-color: #FFF; opacity: 1.0; color: black;}
+            }
+        
+            .factTable {
+                font-family: helvetica;
+                float: left;
+                background-color: black;
+            }
+            
+            .factTable table {
+                color: white;
+                border-color: white;
+                border-width: thick;
+                float: left;
+            }
+            
+            .factTable:hover table {
+                border-color: black;
+                border-width: thick;
+                animation: boxTransition .15s forwards;
+                -webkit-animation: boxTransition .15s forwards;
+            }
+            
+            @-moz-keyframes scale { 100% { -moz-transform: scale(1.35); } }
+            @-webkit-keyframes scale { 100% { -webkit-transform: scale(1.35); } }
+            @keyframes scale { 100% { -webkit-transform: scale(1.35); transform:scale(1.35); } }
+            
+            marquee:hover {
+                 -webkit-animation:scale .15s linear forwards;
+                -moz-animation:scale .15s linear forwards;
+                animation:scale .15s linear forwards;
+            }
+            
+            #infoBox h3 {
+                font-family: helvetica;
+                color: white;
+            }
+            
+            #infoBox:hover h3 {
+                font-family: helvetica;
+                color: black;
+            }
+            
+            a { color: white; }
+               
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <td id="logoAndTitle">
+                    <img id="logoImage" src="tokyo_logo.png" height="195" width="150" hspace="15"/>
+                    <img id="logoImage" src="someity.png" height="120" width="93.81" hspace="40" vspace="20"/>
+                    <img id="logoImage" src="miraitowa.png" height="120" width="93.81" hspace="40"/>
+                </td>
+                <td id="infoBox">
+                    <h3>The 2020 Tokyo Olympics</h3> 
+                    <p style="font-size: 15px;">Fifty-six years after having organised the Olympic Games, the Japanese capital will be hosting a Summer edition for the second time, from 24 July to 9 August 2020. The Games in 1964 radically transformed the country. According to the organisers of the event in 2020, the Games of the XXXII Olympiad of the modern era will be “the most innovative ever organised, and will rest on three fundamental principles to transform the world: striving for your personal best (achieving your personal best); accepting one another (unity in diversity); and passing on a legacy for the future (connecting to tomorrow)”.
+                    <br><br>
+                    Aligning with the reforms advocated by Olympic Agenda 2020, the Tokyo Games will use as many existing competition venues as possible, namely those built for the Games in 1964, such as the prestigious Nippon Budokkan for judo, the Baji Koen Park for equestrian events, and the Yoyogi National Gymnasium for handball. The Tokyo National Stadium, where the Opening and Closing Ceremonies and athletics competitions will be staged, will be completely revamped and replaced by a new arena.
+                    <br><br>
+                    Japan has been an Olympic land since the Summer Games of 1964, which were the first to be staged in Asia. In 2020, the country will host its fourth Games, if we include the Winter Games of 1972 in Sapporo and of 1998 in Nagano.
+                    <br><br><br></p>
+                </td>
+                <td class="factTable" colspan="3">
+                    <table>
+                        <tr align="left">
+                            <td width="70%">
+                                <table border="1 | 2 | 3 | 4">
+                                <tr>
+                                    <td width="250">
+                                        <h3><b>Date</b></h3>
+                                        <p>24 July - 09 Aug</p>
+                                    </td>
+                                    <td width="250">
+                                        <h3><b>Country</b></h3>
+                                        <p>Japan</p>
+                                    </td>
+                                    <td width="250">
+                                        <h3><b>Countdown</b></h3>
+                                        <p>Calm down, it's a while</p>
+                                    </td>
+                                    <td width="250">
+                                        <a href="http://tokyo2020.org" target="_blank"><h3><b>Website</b></h3></a>
+                                        <p>Probably a better resource</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="250">
+                                        <h3><b>Athletes Expected</b></h3>
+                                        <p>11,091</p>
+                                    </td>
+                                    <td width="250">
+                                        <h3><b>Stadium</b></h3>
+                                        <p>New National Stadium</p>
+                                    </td>
+                                    <td width="500">
+                                        <h3><b>Facts</b></h3>
+                                        <li>Skateboarding might become an Olympic Sport</li>
+                                        <li>Will feature 339 Gold Medals</li>
+                                        <li>This is the second time Tokyo has hosted the Olympics</li>
+                                        <li>Tokyo is the safest city in the world</li>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                </td>
+            </tr>
+        </table>  
+    </body>
+    
+    <footer align="right">
+        <font size="2" style="color:white;">Created by: Zain Khalid</font>
+        <br>
+        <font size="2" style="color:white;">Contact information: <a href="mailto:betterthanthereal1995site@olympics.ca">
+        better_than_the_real_1995_site@olympics.ca</a></font>
+        <br>
+        <font size="2" style="color:white;"><a href="https://www.olympic.org/tokyo-2020">Reference</a></font>
+    </footer>   
+</html>
